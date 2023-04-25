@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+{% extends "learning_logs/base.html" %}
+{% block header %}
+<div class="jumbotron">
+    <h1>Особистий блог навчання</h1>
+</div>
+{% endblock header %}
+{% block content %}
+<h2>
+    <a href="{% url 'users:register' %}">Зареєструй аккаунт</a> зроби свій власний
+    журнал навчання та перелічи теми, які вивчаєш
+</h2>
+<h2>
+    Щоразу зроби допис, коли вивчаєш щось нове
+</h2>
+{% endblock content %}
+</html>
